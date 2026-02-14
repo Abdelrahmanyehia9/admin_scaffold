@@ -7,7 +7,7 @@ class SidebarOptions {
 
   /// Width of the sidebar when expanded
   final double width;
-
+  final Widget? customHeader ; 
   /// Width of the sidebar when collapsed (icons only)
   final double collapsedWidth;
 
@@ -148,7 +148,7 @@ class SidebarOptions {
     this.headerIconTitleSpacing = 12,
     this.headerIconSize = 32,
     this.headerIconSizeCollapsed = 28,
-
+    this.customHeader, 
     // Behavior
     this.initiallyCollapsed = false,
 
