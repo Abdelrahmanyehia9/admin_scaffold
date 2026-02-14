@@ -76,6 +76,8 @@ class SidebarOptions {
 
   // ==================== BEHAVIOR OPTIONS ====================
 
+
+  final Widget? customHeader;
   /// Initial collapsed state
   final bool initiallyCollapsed;
 
@@ -83,7 +85,6 @@ class SidebarOptions {
 
   /// Background color of the sidebar
   final Color? backgroundColor;
-
   /// Icon colors
   final Color? iconColor;
   final Color? iconSelectedColor;
@@ -151,7 +152,7 @@ class SidebarOptions {
 
     // Behavior
     this.initiallyCollapsed = false,
-
+this.customHeader,
     // Icon options
     this.iconColor,
     this.iconSelectedColor,
