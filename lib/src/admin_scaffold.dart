@@ -169,6 +169,7 @@ class _AdminScaffoldState extends State<AdminScaffold> {
       child: Column(
         children: [
           options.customHeader ??  _buildSidebarHeader(theme),
+         options.customHeader?? _buildSidebarHeader(theme),
           Expanded(
             child: ListView(
               padding: EdgeInsets.symmetric(vertical: options.listPaddingVertical),
